@@ -550,6 +550,10 @@
     border-color: var(--primary);
 }
 
+/* item meal */
+.item-meal {
+    cursor: pointer;
+}
 
 /*** Footer ***/
 .footer .btn.btn-social {

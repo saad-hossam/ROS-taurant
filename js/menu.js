@@ -5,5 +5,5 @@ function showMeal(element){
     var head = element.querySelectorAll("div span")[0].innerHTML;
     var price = element.querySelectorAll("div span")[1].innerHTML;
     //window.location.href = "preview.html?img="+path+"&head="+head+"&price="+price;
-    window.open("/preview.html?img="+path+"&head="+head+"&price="+price,'_blank');
+    window.location.href = "preview.html?img="+path+"&head="+head+"&price="+price;
 }

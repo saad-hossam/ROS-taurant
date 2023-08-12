@@ -154,7 +154,7 @@ h2{
             </div>
         
             <div class="card">
-                <form>
+                <form action="#" >
                     <div class="form-group">
                         <label for="username">Username:</label>
                         <input type="text" class="form-control" id="username" placeholder="Enter your username">
@@ -162,29 +162,19 @@ h2{
         
                     <div class="form-group">
                         <label for="password">Password:</label>
-                        <input type="password" class="form-control" id="password" placeholder="Enter your password">
-                    </div>
+                        <input type="password" class="form-control" id="password" placeholder="Enter your password"> 
                     <br>
                     <div class="signup-link">
                         <p>Don't have an account? <a href="reg.html">Sign up</a></p>
                     </div>
         
                    
-            <button type="submit" class="btn btn-primary" onclick="validateCredentials()">Login</button>
+            <button type="submit" class="btn btn-primary" onclick="navigate(event)">Login</button>
                 </form>
             </div>
         
             
         </div>
-
-
-
-
-
-
-
-
-
 
 
    
@@ -205,6 +195,26 @@ h2{
     
     <!-- <script src="js/login.js"></script> -->
 
- 
+    <script>
+
+
+
+
+function navigate(event){
+
+    var username=document.getElementById('username').value;
+var password=document.getElementById('password').value;
+
+var usernameRegex = /^[a-zA-Z0-9_]{3,15}$/;
+
+var passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+event.preventDefault();
+    if (usernameRegex.test(username) && passwordRegex.test(password)) {
+ window.location.href='index.html';
+} else {
+  alert('Please enter  a valid username and password')
+}
+}
+    </script>
 </body>
 </html>

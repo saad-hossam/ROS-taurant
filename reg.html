@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROS-taurant</title>
+         <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.1/font/bootstrap-icons.min.css">
+
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+.reg-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px; /* Adjust the margin-top value as needed */
+  position: relative;
+  bottom: 45px;
+}
+
+h2{
+  font-family: 'Pacifico', cursive;
+  color: #FEA116;
+  
+}
+
+.card {
+  width: 350px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px auto 0 auto; /* Adjust the margin values as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 40px;
+}
+
+
+
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-family: 'Nunito', sans-serif;
+  color: #0F172B;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type='password'],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-family: 'Nunito', sans-serif;
+  color: #0F172B;
+}
+
+button {
+  background-color:#FEA116;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+    </style>
+</head>
+<body>
+   
+        
+        <div class=" position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-primary m-0"><i class="fa fa-hamburger me-3"></i>ROS-taurant</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="menu.html" class="nav-item nav-link active">Menu</a>
+                        <a href="gallary.html" class="nav-item nav-link">Gallary</a>
+                        <a href="team.html" class="nav-item nav-link">Our Team</a>
+                        <a href="login.html" class="nav-item nav-link">Login</a>
+
+
+
+                    </div>
+                    <a href="booking.html" class="btn btn-primary py-2 px-4"><i class="fa-phone-alt" style="color: #fff;"></i> Book A Table</a>
+                </div>
+            </nav>
+
+            <div class="py-5 bg-dark hero-header mb-5">
+                
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+ 
+
+
+        <div class="reg-title">
+            <svg width="50" height="50">
+                <line x1="0" y1="25" x2="200" y2="25" stroke="#FEA116" stroke-width="2" />
+            </svg>
+        
+            <h2 class="pacifico-font">Registration</h2>
+        
+            <svg width="50" height="50">
+                <line x1="0" y1="25" x2="200" y2="25" stroke="#FEA116" stroke-width="2" />
+            </svg>
+          </div>
+        
+          <div class="card">
+            <form>
+              <div class="form-group">
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname" class="form-control" placeholder="Enter your First Name" required>
+              </div>
+        
+              <div class="form-group">
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname" class="form-control" placeholder="Enter your Last name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email address" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="form-control" placeholder="Enter your Password" required>
+              </div>
+        
+              <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your phone number" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" class="form-control" placeholder="Enter your address" required>
+              </div>
+            
+              <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" class="form-control" required>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+              
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+            
+
+
+
+
+
+
+
+
+
+
+
+   
+    <!-- Footer End -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/js/bootstrap.min.js" integrity="sha512-Pv/SmxhkTB6tWGQWDa6gHgJpfBdIpyUy59QkbshS1948GRmj6WgZz18PaDMOqaEyKLRAvgil7sx/WACNGE4Txw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script> -->
+  
+    <script src="js/preview.js"></script>
+</body>
+</html>

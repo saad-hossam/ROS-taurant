@@ -1,4 +1,4 @@
-**Project Name:** ros-restaurant
+**Project Name:** ROS-restaurant
 
 **Developers:** Rewas, Omer, Saad
 
